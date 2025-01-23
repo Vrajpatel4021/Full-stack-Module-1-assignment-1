@@ -6,7 +6,10 @@ const path = require('path');
 const app= express();
 const PORT = 3000;
 
-app.use(bodyParser.json()); 
+
+
+
+app.use(bodyParser.json());
 
 const studentDataPath = path.join(__dirname, 'data.json');
 const students = JSON.parse(fs.readFileSync(studentDataPath, 'utf8'));
