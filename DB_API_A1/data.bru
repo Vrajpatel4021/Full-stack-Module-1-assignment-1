@@ -1,0 +1,29 @@
+meta {
+  name: data
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/students/above-threshold
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "threshold":-23
+  }
+}
+
+tests {
+  {
+    threshold:400
+  }
+}
+
+docs {
+  {
+  threshold:400
+  }
+}
